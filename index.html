@@ -1,0 +1,102 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mini MOBA 2 Player</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+#game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #28683c;
+}
+
+/* =====================================================
+   MAP
+===================================================== */
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 50% 50%, #367a45 0%, #245d35 100%);
+}
+
+/* =====================================================
+   LANES
+===================================================== */
+
+.lane {
+    position: absolute;
+    height: 90px;
+    background: #b69a61;
+    border: 5px solid #806b42;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.topLane {
+    width: 85%;
+    left: 7%;
+    top: 15%;
+    transform: rotate(28deg);
+}
+
+.midLane {
+    width: 100%;
+    left: 0;
+    top: 45%;
+    transform: rotate(-25deg);
+}
+
+.bottomLane {
+    width: 85%;
+    left: 7%;
+    bottom: 15%;
+    transform: rotate(28deg);
+}
+
+.laneText {
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    z-index: 3;
+    text-shadow: 2px 2px 5px black;
+}
+
+.topText {
+    top: 7%;
+    left: 47%;
+}
+
+.midText {
+    top: 41%;
+    left: 47%;
+}
+
+.bottomText {
+    bottom: 7%;
+    left: 44%;
+}
+
+/* ==============*
+```
